@@ -10,7 +10,8 @@
 		<div class="header__menu menu">
 			<nav class="menu__body">
 				<ul class="menu__list">
-					<li class="menu__item">
+					<div class="menu__item menu__item_mobile"></div>
+					<li data-da=".menu__item_mobile, 1090.01, 0" class="menu__item menu__item_first">
 						<a data-parent="1" href="#" class="menu__link menu__link_first"><span>Направления</span></a>
 						<ul class="menu__sublist">
 							<li class="menu__subitem">
@@ -33,11 +34,14 @@
 				<li class="menu__item">
 					<a href="#" class="menu__link">Блог</a>
 				</li>
-				<li class="menu__item">
+				<li class="menu__item menu__item_desktop-hidden">
+					<a href="#" class="menu__link">Партнёрская программа</a>
+				</li>
+				<li  class="menu__item menu__item_mobile-hidden">
 					<a data-parent="1" href="#" class="menu__link">
 						<span>Помощь клиентам</span>
 					</a>
-					<div class="menu__sublist help">
+					<div data-da=".menu__list, 767.98" class="menu__sublist help">
 						<div class="help__content">
 							<span class="help__text">Мы на связи с 09:00 до 21:00 мск</span>
 							<div class="help__social social-help">
@@ -75,8 +79,7 @@
 			</nav>
 		</div>
 		<div class="header__actions actions-header">
-			<form class="actions-header__search">
-
+			<form data-da=".menu__item_mobile, 768" class="actions-header__search">
 				<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Поиск" class="actions-header__input">
 				<button class="actions-header__img-search">
 					<img src="@img/header/search.svg" alt="Поиск">
@@ -85,7 +88,7 @@
 			<a href="#" class="actions-header__link">
 				<img src="@img/header/love 1.svg" alt="favorite">
 			</a>
-			<button class="actions-header__access">Войти</button>
+			<button data-da=".menu__item_mobile, 768.02" class="actions-header__access">Войти</button>
 		</div>
 	</div>
 </header>
