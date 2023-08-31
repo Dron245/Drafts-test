@@ -259,3 +259,51 @@
 		@include adaptiveValue("font-size", 13, 10,1440,768,1);
 	}
 }
+
+/*=========ЫУФКСР=======*/
+
+.page {
+
+	&__search {
+		@media (min-width:$mobile){
+			 display: none; 
+		}
+		position: relative;
+		margin-top: -50px;
+		z-index: -1;
+		// background-position: left top;
+		// border-radius: 20px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+	}
+}
+.search {
+
+	&__title {
+		width: percent(265,375);
+		margin: 0 auto;
+		padding-top: 165px;
+		font-size: rem(23);
+		font-weight: 800;
+		line-height: math.div(30 , 23);
+	}
+
+	&__text {
+		margin-top: 13px;
+		font-size: rem(14);
+		line-height: math.div(26 , 14);
+	}
+
+	&__link {
+		margin-top: 32px;
+		display: inline-block;
+		color: #000;
+		font-weight: 500;
+		font-size: rem(15);
+		background-color: #FFD600;
+		border-radius: 50px;
+		padding: 18px 30px;
+	}
+}
+
