@@ -7,6 +7,44 @@
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
 			<main class="page">
+				<section  class="page__hero hero">
+					<div  class="hero__container">
+						<div style="background-image: url('img/main/hero/bgd.jpg');" class="hero__wrapper">
+							<div class="hero__content">
+								<h1 class="hero__title">Поиск и бронирование<br>экскурсий</h1>
+								<span class="hero__subtitle">Экскурсии и частные гиды в России и за рубежом</span>
+								<form class="hero__actions actions-hero">
+									<label class="actions-hero__item actions-hero__item_side">
+										<div class="actions-hero__img">
+											<img src="@img/main/hero/item.svg" alt="Поиск">
+										</div>
+										<input id="autoComplete" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="actions-hero__input">
+									</label>
+									<div class="actions-hero__devider"></div>
+									<label class="actions-hero__item actions-hero__item_date">
+										<div class="actions-hero__img">
+											<img src="@img/main/hero/calendar 1.svg" alt="Календарь">
+										</div>
+										<input id="datepicker" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Дата" class="actions-hero__input">
+									</label>
+									<button class="button actions-hero__item actions-hero__item_search">
+										<img src="@img/main/hero/search-hero.svg" alt="Поиск">
+										<span class="actions-hero__search-text">Найти</span>
+									</button>
+								</form>
+								<div class="hero__often often">
+									<span class="often__title">Часто ищут:</span>
+									<div class="often__result">
+										<span class="often__resut-text">Дубай</span>
+										<span class="often__resut-text">Стамбул</span>
+										<span class="often__resut-text">Санкт-Петербург</span>
+										<span class="often__resut-text">Казань</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 			</main>
 			@@include('html/_footer.htm',{})
 		</div>
