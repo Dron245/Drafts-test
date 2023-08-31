@@ -11,9 +11,10 @@
 		
 	}
 	&__wrapper {
-			background-position: left;
+			background-position: left top;
 		border-radius: 20px;
 		background-repeat: no-repeat;
+		background-size: cover;
 		@media (max-width:$mobile){
 			 padding: 0px 24px; 
 		}
@@ -171,4 +172,90 @@
 	}
 }
 
-//====================================================================================================
+//======POPULAR==============================================================================================
+
+.page {
+
+	&__popular {
+		@include adaptiveValue("margin-top", 93, 62,1440,768,1);
+	}
+}
+.popular {
+
+	&__container {
+		@media (max-width:$mobile){
+			  padding-bottom: 70px;
+			  border-bottom-left-radius: 50px;
+			  border-bottom-right-radius: 50px;
+			  background-color: white;
+		}
+	}
+
+	&__title {
+	}
+
+	&__text {
+		@include adaptiveValue("margin-top", 17, 9,1440,768,1);
+		@include adaptiveValue("font-size", 16, 14,1440,768,1);
+		line-height: math.div(24 , 14);;
+	}
+
+	&__galery {
+		@include adaptiveValue("margin-top", 63, 38,1440,768,1);
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 45px;
+		@media (max-width:$mobile){
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1.25rem;
+		}
+	}
+}
+
+.galery {
+
+	&__item {
+		position: relative;
+		border-radius: 20px;
+		overflow: hidden;
+	}
+
+	&__image {
+		padding-bottom: percent(490,450);
+		@media (max-width:$mobile){
+			 padding-bottom: percent(202,157); 
+		}
+		img {
+			// width: 100%;
+		}
+	}
+
+	&__content {
+		position: absolute;
+		z-index: 2;
+		left: 45px;
+		bottom: 45px;
+		display: flex;
+		flex-direction: column;
+		gap: 18.5px;
+		@media (max-width:$mobile){
+			 left: 20px;
+			 bottom: 20px; 
+		}
+	}
+
+	&__text {
+		color: #FFF;
+		font-weight: 700;
+		@include adaptiveValue("font-size", 22, 13,1440,768,1);
+	}
+
+	&__subtext {
+		border-radius: 100px;
+		background: #FFD600;
+		padding: 9px 26px;
+		line-height: math.div(16 , 13);
+		font-weight: 500;
+		@include adaptiveValue("font-size", 13, 10,1440,768,1);
+	}
+}
