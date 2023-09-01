@@ -6,6 +6,7 @@ import { flsModules } from "./modules.js";
 import autoComplete from '@tarekraafat/autocomplete.js';
 // import '@tarekraafat/autocomplete.js/dist/css/autoComplete.01.css';
 import { easepick } from '@easepick/bundle';
+import { RangePlugin } from '@easepick/range-plugin';
 // import '@easepick/bundle/dist/index.css';
 
 const countryList = [
@@ -261,7 +262,7 @@ const countryList = [
 ];
 
 const autoCompleteJS = new autoComplete({
-	selector: "#autoComplete",
+	selector: "#autoCompleteCountry",
    placeHolder: "Выберите направление",
 	data: {
 		src: countryList,
@@ -283,9 +284,31 @@ const autoCompleteJS = new autoComplete({
 	},
 });
 
+
+
 const picker = new easepick.create({
 	element: document.getElementById('datepicker'),
 	css: [
 	  'https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.1/dist/index.css',
 	],
  });
+
+ const pickerexc = new easepick.create({
+	element: "#checkin",
+	css: [
+		 "https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.1/dist/index.css",
+		 'https://cdn.jsdelivr.net/npm/@easepick/range-plugin@1.2.1/dist/index.css',
+	],
+	zIndex: 10,
+	// RangePlugin: {
+	// 	 
+	// },
+	plugins: [
+		 RangePlugin
+		 
+	],
+	RangePlugin: {
+		tooltip: true,
+		elementEnd: "#checkout"
+	 },
+})

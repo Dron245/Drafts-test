@@ -271,11 +271,12 @@
 		position: relative;
 		margin-top: -50px;
 		z-index: -1;
-		// background-position: left top;
+		 background-position: bottom center;
 		// border-radius: 20px;
 		background-repeat: no-repeat;
 		background-size: cover;
 		text-align: center;
+		padding-bottom: 270px;
 	}
 }
 .search {
@@ -307,3 +308,155 @@
 	}
 }
 
+/*========EXCURSIONS======*/
+
+.page {
+
+	&__excursions {
+		@include adaptiveValue("padding-top", 108, 68,1440,768,1);
+	}
+}
+.excursions {
+
+	&__top {
+		display: flex;
+		align-items: center;
+		gap: 58px;
+		@media (max-width:$mobile){
+			 flex-direction: column;
+			 gap: 68px;
+		}
+	}
+
+	&__title {
+		@media (max-width:$mobile){
+			 text-align: left; 
+		}
+	}
+
+	&__form {
+		display: flex;
+		align-items: center;
+		@include adaptiveValue("gap", 30, 18,1440,768,1);
+		@media (max-width:$mobile){
+			 width: 100%;
+			 justify-content: space-between; 
+		}
+	}
+
+	&__item {
+		position: relative;
+		display: flex;
+		align-items: center;
+		@include adaptiveValue("gap", 12, 8,1440,768,1);
+		&::before{
+			// content:'';
+			display: none;
+			position: absolute;
+			left: 0;
+			bottom: 125%;
+			font-weight: 500;
+			font-size: rem(14);
+			@media (max-width:$mobile){
+				 display: block; 
+			}
+		}
+		&_city {
+			&::before{
+				content:'Город';
+			}
+		}
+
+		&_date {
+			&::before{
+				content:'Дата';
+			}
+		}
+	}
+
+	&__select {
+		flex: 0 0 241px;
+	}
+
+	
+
+	&__input {
+		@include adaptiveValue("width", 241, 70,1440,375,1);
+		border-radius: 10px;
+		border: 1px solid #E6E6E6;
+		background: #FFF;
+		padding: 15px 22px;
+		color: #b5b5b5;
+		font-weight: 500;
+		@include adaptiveValue("font-size", 16, 14,1440,768,1);
+		@media (max-width:$mobile){
+			border-radius: 1000px;
+			background: #F5F5F5;
+			font-weight: 400;
+			color: #454545;
+			padding: 10px 15px;
+		}
+	}
+
+	&__content {
+		@include adaptiveValue("margin-top", 77, 40,1440,768,1);
+		display: grid;
+		// grid-template-columns: repeat(auto-fit, minmax(157px, 333px));
+		grid-template-columns: repeat(4, 1fr);
+		@media (max-width:$mobile){
+			 grid-template-columns: repeat(2, 1fr); 
+		}
+		column-gap: 35px;
+		row-gap: 30px;
+	}
+}
+
+.excursion {
+	position: relative;
+	&__img {
+		width: 100%;
+
+	}
+
+	&__abs-love{
+		position: absolute;
+		z-index: 2;
+		top: 16px;
+		right: 16px;
+		display: flex;
+		width: 50px;
+		height: 50px;
+		align-items: center;
+		justify-content: center;
+		border-radius: 100px;
+		opacity: 0.1;
+		background: #FFF;
+		@media (max-width:$mobile){
+			 top: 8px;
+			 right: 8px; 
+			 width: 23px;
+			 height: 23px;
+		}
+	}
+	
+	&__content {
+	}
+
+	&__title {
+	}
+
+	&__text {
+	}
+
+	&__cost {
+	}
+
+	&__price {
+	}
+
+	&__select {
+	}
+
+	&__add {
+	}
+}

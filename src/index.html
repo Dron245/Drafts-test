@@ -18,7 +18,7 @@
 										<div class="actions-hero__img">
 											<img src="@img/main/hero/item.svg" alt="Поиск">
 										</div>
-										<input id="autoComplete" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="actions-hero__input">
+										<input id="autoCompleteCountry" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="actions-hero__input">
 									</label>
 									<div class="actions-hero__devider"></div>
 									<label class="actions-hero__item actions-hero__item_date">
@@ -113,7 +113,57 @@
 					<a href="#" class="search__link">Найти тур</a>
 				</section>
 				<section class="page__excursions excursions">
-
+					<div class="excursions__container">
+						<div class="excursions__top">
+							<h3 class="excursions__title title">Экскурсии</h3>
+							<div  class="excursions__form">
+								<label class="excursions__item excursions__item_city">
+									<select name="form[]" class="form excursions__select">
+										<option class="excursions__opt-pcd" value="" selected>Выберите город</option>
+										<option class="excursions__opt-mobiled" value="" selected>Все города</option>
+										<option value="2">Москва</option>
+										<option value="3">Дубай</option>
+										<option value="4">Рязань</option>
+									</select>
+								</label>
+								<div class="excursions__item excursions__item_date">
+									<input id="checkin" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="excursions__input input">
+									<span>-</span>
+									<input id="checkout" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="excursions__input input">
+								</div>
+							</div>
+						</div>
+						<div class="excursions__content">
+							<div class="excursions__excursion excursion">
+								<div class="excursion__img">
+									<img src="@img/main/excursions/01.jpg" alt="Эрмитаж">
+								</div>
+								<button type="button" class="excursion__abs-love">
+									<picture>
+										<source media="(min-width: 767.98px)" srcset="/src/img/main/excursions/ld.svg">
+										<img src="@img/main/excursions/lm.svg" alt="в избранное">
+									</picture>
+									<!-- <img src="@img/header/love 1.svg" alt="в избранное"> -->
+								</button>
+								<div class="excursion__content">
+									<span class="excursion__title">Коллекция Эрмитажа и парадная жизнь Зимнего дворца</span>
+									<p class="excursion__text">Двухчасовая экскурсия по Эрмитажу в мини-группе — история Зимнего дворца и шедевры мастеров Западной Европы.</p>
+									<div class="excursion__cost">
+										<div class="excursion__price">от 2750 ₽ / <span>с чел</span></div>
+										<select name="form[]" class="form excursion__select">
+											<option value="" selected>Выбрать время</option>
+											<option value="2">9:00</option>
+											<option value="3">13:00</option>
+											<option value="4">16:00</option>
+										</select>
+									</div>
+									<div class="excursion__add">
+										<img src="@img/main/excursions/plus 2.svg" alt="Добавить">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</section>
 				<section class="page__feedback feedback">
 

@@ -2,6 +2,7 @@
 // Снипет (HTML): sel
 .select {
 	position: relative;
+	@include adaptiveValue("width", 241, 131,1440,375,1);
 	// .select__body
 	&__body {
 		position: relative;
@@ -10,25 +11,49 @@
 	&__title {
 		color: inherit;
 		text-align: left;
+		// border-radius: 10px;
 		border: 1px solid #d9d9d9;
 		background-color: #fff;
 		cursor: pointer;
 		width: 100%;
-		border-radius: 4px;
+		border-radius: 10px;
+		padding: 10px 0; 
+		@media (max-width:$mobile){
+			border-radius: 1000px;
+			background: #F5F5F5;
+			padding: 5px 0; 
+		}
+	}
+
+	&__content {
+		font-weight: 500;
+		color: #b7b7b7;
+		@include adaptiveValue("font-size", 16, 14,1440,768,1);
+		@media (max-width:$mobile){
+			 font-weight: 400;
+			 color: #454545; 
+		}
 	}
 	// .select__value
 	&__value {
+		// width: 241px;
 		display: flex;
 		align-items: center;
 		height: rem(30);
 		padding: 0 rem(15);
+		@media (max-width:$mobile){
+			 padding: 0px 5px; 
+		}
 		gap: rem(10);
 		> * {
 			flex: 1 1 auto;
 		}
 		&:after {
 			content: "";
-			align-self: stretch;
+			width: 7px;
+			height: 7px;
+			background: url('@img/header/arrow-down.svg') 0 0 no-repeat;
+			// align-self: stretch;
 			flex: 0 0 10px;
 			transition: all 0.3s ease 0s;
 			display: flex;
@@ -56,9 +81,9 @@
 	}
 	// .select__options
 	&__options {
-		color: #000;
+		color: #b7b7b7;
 		position: absolute;
-		top: 29px;
+		top: 52px;
 		border-radius: 0 0 4px 4px;
 		min-width: 100%;
 		left: 0;
