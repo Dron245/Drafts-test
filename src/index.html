@@ -127,52 +127,834 @@
 									</select>
 								</label>
 								<div class="excursions__item excursions__item_date">
-									<input id="checkin" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="excursions__input input">
+									<input id="checkin" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Выберите дату начала" class="excursions__input input">
 									<span>-</span>
-									<input id="checkout" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="excursions__input input">
+									<input id="checkout" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Выберите дату конца" class="excursions__input input">
 								</div>
 							</div>
 						</div>
-						<div class="excursions__content">
-							<div class="excursions__excursion excursion">
-								<div class="excursion__img">
-									<img src="@img/main/excursions/01.jpg" alt="Эрмитаж">
-								</div>
-								<button type="button" class="excursion__abs-love">
-									<picture>
-										<source media="(min-width: 767.98px)" srcset="/src/img/main/excursions/ld.svg">
-										<img src="@img/main/excursions/lm.svg" alt="в избранное">
-									</picture>
-									<!-- <img src="@img/header/love 1.svg" alt="в избранное"> -->
-								</button>
-								<div class="excursion__content">
-									<span class="excursion__title">Коллекция Эрмитажа и парадная жизнь Зимнего дворца</span>
-									<p class="excursion__text">Двухчасовая экскурсия по Эрмитажу в мини-группе — история Зимнего дворца и шедевры мастеров Западной Европы.</p>
-									<div class="excursion__cost">
-										<div class="excursion__price">от 2750 ₽ / <span>с чел</span></div>
-										<select name="form[]" class="form excursion__select">
-											<option value="" selected>Выбрать время</option>
-											<option value="2">9:00</option>
-											<option value="3">13:00</option>
-											<option value="4">16:00</option>
-										</select>
+						<div data-showmore class="excursions__wrapper block">
+							<div data-showmore-content="1100" class="excursions__content block__content">
+								<article class="excursions__excursion excursion">
+									<div class="excursion__img">
+										<img src="@img/main/excursions/01.jpg" alt="Эрмитаж">
 									</div>
-									<div class="excursion__add">
-										<img src="@img/main/excursions/plus 2.svg" alt="Добавить">
+									<button type="button" class="excursion__abs-love">
+										<picture>
+											<source media="(min-width: 767.98px)" srcset="img/main/excursions/ld.svg">
+											<img src="@img/main/excursions/lm.svg" alt="в избранное">
+										</picture>
+										<!-- <img src="@img/header/love 1.svg" alt="в избранное"> -->
+									</button>
+									<div class="excursion__content">
+										<span class="excursion__title">Коллекция Эрмитажа и парадная жизнь Зимнего дворца</span>
+										<p class="excursion__text">Двухчасовая экскурсия по Эрмитажу в мини-группе — история Зимнего дворца и шедевры мастеров Западной Европы.</p>
+										<div class="excursion__bottom">
+											<div class="excursion__cost">
+												<div class="excursion__price">от 2750 ₽ / <span>с чел</span></div>
+												<select name="form[]" class="form excursion__select">
+													<option value="" selected>Выбрать время</option>
+													<option value="2">9:00</option>
+													<option value="3">13:00</option>
+													<option value="4">16:00</option>
+												</select>
+												<button class="excursion__add-mob">Добавить в заказ</button>
+											</div>
+											<button type="button" class="excursion__add">
+												<img src="@img/main/excursions/plus 2.svg" alt="Добавить">
+											</button>
+										</div>
+									</div>
+								</article>
+								<article class="excursions__excursion excursion">
+									<div class="excursion__img">
+										<img src="@img/main/excursions/02.jpg" alt="Эрмитаж">
+									</div>
+									<button type="button" class="excursion__abs-love">
+										<picture>
+											<source media="(min-width: 767.98px)" srcset="img/main/excursions/ld.svg">
+											<img src="@img/main/excursions/lm.svg" alt="в избранное">
+										</picture>
+										<!-- <img src="@img/header/love 1.svg" alt="в избранное"> -->
+									</button>
+									<div class="excursion__content">
+										<span class="excursion__title">По дюнам на квадроциклах, катание на верблюдах и ужин в пустыне</span>
+										<p class="excursion__text">Двухчасовая экскурсия по Эрмитажу в мини-группе — история Зимнего дворца и шедевры мастеров Западной Европы.</p>
+										<div class="excursion__bottom">
+											<div class="excursion__cost">
+												<div class="excursion__price">от 2750 ₽ / <span>с чел</span></div>
+												<select name="form[]" class="form excursion__select">
+													<option value="" selected>Выбрать время</option>
+													<option value="2">9:00</option>
+													<option value="3">13:00</option>
+													<option value="4">16:00</option>
+												</select>
+												<button class="excursion__add-mob">Добавить в заказ</button>
+											</div>
+											<button type="button" class="excursion__add">
+												<img src="@img/main/excursions/plus 2.svg" alt="Добавить">
+											</button>
+										</div>
+									</div>
+								</article>
+								<article class="excursions__excursion excursion">
+									<div class="excursion__img">
+										<img src="@img/main/excursions/03.jpg" alt="Эрмитаж">
+									</div>
+									<button type="button" class="excursion__abs-love">
+										<picture>
+											<source media="(min-width: 767.98px)" srcset="img/main/excursions/ld.svg">
+											<img src="@img/main/excursions/lm.svg" alt="в избранное">
+										</picture>
+										<!-- <img src="@img/header/love 1.svg" alt="в избранное"> -->
+									</button>
+									<div class="excursion__content">
+										<span class="excursion__title">Весь Калининград с земли и воды: экскурсия на автобусе и кораблике</span>
+										<p class="excursion__text">Двухчасовая экскурсия по Эрмитажу в мини-группе — история Зимнего дворца и шедевры мастеров Западной Европы.</p>
+										<div class="excursion__bottom">
+											<div class="excursion__cost">
+												<div class="excursion__price">от 2750 ₽ / <span>с чел</span></div>
+												<select name="form[]" class="form excursion__select">
+													<option value="" selected>Выбрать время</option>
+													<option value="2">9:00</option>
+													<option value="3">13:00</option>
+													<option value="4">16:00</option>
+												</select>
+												<button class="excursion__add-mob">Добавить в заказ</button>
+											</div>
+											<button type="button" class="excursion__add">
+												<img src="@img/main/excursions/plus 2.svg" alt="Добавить">
+											</button>
+										</div>
+									</div>
+								</article>
+								<article class="excursions__excursion excursion">
+									<div class="excursion__img">
+										<img src="@img/main/excursions/04.jpg" alt="Эрмитаж">
+									</div>
+									<button type="button" class="excursion__abs-love">
+										<picture>
+											<source media="(min-width: 767.98px)" srcset="img/main/excursions/ld.svg">
+											<img src="@img/main/excursions/lm.svg" alt="в избранное">
+										</picture>
+										<!-- <img src="@img/header/love 1.svg" alt="в избранное"> -->
+									</button>
+									<div class="excursion__content">
+										<span class="excursion__title">Must-visit: экскурсия по великому Босфору на пароме с аудиогидом</span>
+										<p class="excursion__text">Двухчасовая экскурсия по Эрмитажу в мини-группе — история Зимнего дворца и шедевры мастеров Западной Европы.</p>
+										<div class="excursion__bottom">
+											<div class="excursion__cost">
+												<div class="excursion__price">от 2750 ₽ / <span>с чел</span></div>
+												<select name="form[]" class="form excursion__select">
+													<option value="" selected>Выбрать время</option>
+													<option value="2">9:00</option>
+													<option value="3">13:00</option>
+													<option value="4">16:00</option>
+												</select>
+												<button class="excursion__add-mob">Добавить в заказ</button>
+											</div>
+											<button type="button" class="excursion__add">
+												<img src="@img/main/excursions/plus 2.svg" alt="Добавить">
+											</button>
+										</div>
+									</div>
+								</article>
+								<article class="excursions__excursion excursion">
+									<div class="excursion__img">
+										<img src="@img/main/excursions/05.jpg" alt="Эрмитаж">
+									</div>
+									<button type="button" class="excursion__abs-love">
+										<picture>
+											<source media="(min-width: 767.98px)" srcset="img/main/excursions/ld.svg">
+											<img src="@img/main/excursions/lm.svg" alt="в избранное">
+										</picture>
+										<!-- <img src="@img/header/love 1.svg" alt="в избранное"> -->
+									</button>
+									<div class="excursion__content">
+										<span class="excursion__title">Коллекция Эрмитажа и парадная жизнь Зимнего дворца</span>
+										<p class="excursion__text">Двухчасовая экскурсия по Эрмитажу в мини-группе — история Зимнего дворца и шедевры мастеров Западной Европы.</p>
+										<div class="excursion__bottom">
+											<div class="excursion__cost">
+												<div class="excursion__price">от 2750 ₽ / <span>с чел</span></div>
+												<select name="form[]" class="form excursion__select">
+													<option value="" selected>Выбрать время</option>
+													<option value="2">9:00</option>
+													<option value="3">13:00</option>
+													<option value="4">16:00</option>
+												</select>
+												<button class="excursion__add-mob">Добавить в заказ</button>
+											</div>
+											<button type="button" class="excursion__add">
+												<img src="@img/main/excursions/plus 2.svg" alt="Добавить">
+											</button>
+										</div>
+									</div>
+								</article>
+								<article class="excursions__excursion excursion">
+									<div class="excursion__img">
+										<img src="@img/main/excursions/06.jpg" alt="Эрмитаж">
+									</div>
+									<button type="button" class="excursion__abs-love">
+										<picture>
+											<source media="(min-width: 767.98px)" srcset="img/main/excursions/ld.svg">
+											<img src="@img/main/excursions/lm.svg" alt="в избранное">
+										</picture>
+										<!-- <img src="@img/header/love 1.svg" alt="в избранное"> -->
+									</button>
+									<div class="excursion__content">
+										<span class="excursion__title">По дюнам на квадроциклах, катание на верблюдах и ужин в пустыне</span>
+										<p class="excursion__text">Двухчасовая экскурсия по Эрмитажу в мини-группе — история Зимнего дворца и шедевры мастеров Западной Европы.</p>
+										<div class="excursion__bottom">
+											<div class="excursion__cost">
+												<div class="excursion__price">от 2750 ₽ / <span>с чел</span></div>
+												<select name="form[]" class="form excursion__select">
+													<option value="" selected>Выбрать время</option>
+													<option value="2">9:00</option>
+													<option value="3">13:00</option>
+													<option value="4">16:00</option>
+												</select>
+												<button class="excursion__add-mob">Добавить в заказ</button>
+											</div>
+											<button type="button" class="excursion__add">
+												<img src="@img/main/excursions/plus 2.svg" alt="Добавить">
+											</button>
+										</div>
+									</div>
+								</article>
+								<article class="excursions__excursion excursion">
+									<div class="excursion__img">
+										<img src="@img/main/excursions/07.jpg" alt="Эрмитаж">
+									</div>
+									<button type="button" class="excursion__abs-love">
+										<picture>
+											<source media="(min-width: 767.98px)" srcset="img/main/excursions/ld.svg">
+											<img src="@img/main/excursions/lm.svg" alt="в избранное">
+										</picture>
+										<!-- <img src="@img/header/love 1.svg" alt="в избранное"> -->
+									</button>
+									<div class="excursion__content">
+										<span class="excursion__title">Весь Калининград с земли и воды: экскурсия на автобусе и кораблике</span>
+										<p class="excursion__text">Двухчасовая экскурсия по Эрмитажу в мини-группе — история Зимнего дворца и шедевры мастеров Западной Европы.</p>
+										<div class="excursion__bottom">
+											<div class="excursion__cost">
+												<div class="excursion__price">от 2750 ₽ / <span>с чел</span></div>
+												<select name="form[]" class="form excursion__select">
+													<option value="" selected>Выбрать время</option>
+													<option value="2">9:00</option>
+													<option value="3">13:00</option>
+													<option value="4">16:00</option>
+												</select>
+												<button class="excursion__add-mob">Добавить в заказ</button>
+											</div>
+											<button type="button" class="excursion__add">
+												<img src="@img/main/excursions/plus 2.svg" alt="Добавить">
+											</button>
+										</div>
+									</div>
+								</article>
+								<article class="excursions__excursion excursion">
+									<div class="excursion__img">
+										<img src="@img/main/excursions/08.jpg" alt="Эрмитаж">
+									</div>
+									<button type="button" class="excursion__abs-love">
+										<picture>
+											<source media="(min-width: 767.98px)" srcset="img/main/excursions/ld.svg">
+											<img src="@img/main/excursions/lm.svg" alt="в избранное">
+										</picture>
+										<!-- <img src="@img/header/love 1.svg" alt="в избранное"> -->
+									</button>
+									<div class="excursion__content">
+										<span class="excursion__title">Must-visit: экскурсия по великому Босфору на пароме с аудиогидом</span>
+										<p class="excursion__text">Двухчасовая экскурсия по Эрмитажу в мини-группе — история Зимнего дворца и шедевры мастеров Западной Европы.</p>
+										<div class="excursion__bottom">
+											<div class="excursion__cost">
+												<div class="excursion__price">от 2750 ₽ / <span>с чел</span></div>
+												<select name="form[]" class="form excursion__select">
+													<option value="" selected>Выбрать время</option>
+													<option value="2">9:00</option>
+													<option value="3">13:00</option>
+													<option value="4">16:00</option>
+												</select>
+												<button class="excursion__add-mob">Добавить в заказ</button>
+											</div>
+											<button type="button" class="excursion__add">
+												<img src="@img/main/excursions/plus 2.svg" alt="Добавить">
+											</button>
+										</div>
+									</div>
+								</article>
+								<article class="excursions__excursion excursion">
+									<div class="excursion__img">
+										<img src="@img/main/excursions/01.jpg" alt="Эрмитаж">
+									</div>
+									<button type="button" class="excursion__abs-love">
+										<picture>
+											<source media="(min-width: 767.98px)" srcset="img/main/excursions/ld.svg">
+											<img src="@img/main/excursions/lm.svg" alt="в избранное">
+										</picture>
+										<!-- <img src="@img/header/love 1.svg" alt="в избранное"> -->
+									</button>
+									<div class="excursion__content">
+										<span class="excursion__title">Коллекция Эрмитажа и парадная жизнь Зимнего дворца</span>
+										<p class="excursion__text">Двухчасовая экскурсия по Эрмитажу в мини-группе — история Зимнего дворца и шедевры мастеров Западной Европы.</p>
+										<div class="excursion__bottom">
+											<div class="excursion__cost">
+												<div class="excursion__price">от 2750 ₽ / <span>с чел</span></div>
+												<select name="form[]" class="form excursion__select">
+													<option value="" selected>Выбрать время</option>
+													<option value="2">9:00</option>
+													<option value="3">13:00</option>
+													<option value="4">16:00</option>
+												</select>
+												<button class="excursion__add-mob">Добавить в заказ</button>
+											</div>
+											<button type="button" class="excursion__add">
+												<img src="@img/main/excursions/plus 2.svg" alt="Добавить">
+											</button>
+										</div>
+									</div>
+								</article>
+								<article class="excursions__excursion excursion">
+									<div class="excursion__img">
+										<img src="@img/main/excursions/02.jpg" alt="Эрмитаж">
+									</div>
+									<button type="button" class="excursion__abs-love">
+										<picture>
+											<source media="(min-width: 767.98px)" srcset="img/main/excursions/ld.svg">
+											<img src="@img/main/excursions/lm.svg" alt="в избранное">
+										</picture>
+										<!-- <img src="@img/header/love 1.svg" alt="в избранное"> -->
+									</button>
+									<div class="excursion__content">
+										<span class="excursion__title">По дюнам на квадроциклах, катание на верблюдах и ужин в пустыне</span>
+										<p class="excursion__text">Двухчасовая экскурсия по Эрмитажу в мини-группе — история Зимнего дворца и шедевры мастеров Западной Европы.</p>
+										<div class="excursion__bottom">
+											<div class="excursion__cost">
+												<div class="excursion__price">от 2750 ₽ / <span>с чел</span></div>
+												<select name="form[]" class="form excursion__select">
+													<option value="" selected>Выбрать время</option>
+													<option value="2">9:00</option>
+													<option value="3">13:00</option>
+													<option value="4">16:00</option>
+												</select>
+												<button class="excursion__add-mob">Добавить в заказ</button>
+											</div>
+											<button type="button" class="excursion__add">
+												<img src="@img/main/excursions/plus 2.svg" alt="Добавить">
+											</button>
+										</div>
+									</div>
+								</article>
+								<article class="excursions__excursion excursion">
+									<div class="excursion__img">
+										<img src="@img/main/excursions/03.jpg" alt="Эрмитаж">
+									</div>
+									<button type="button" class="excursion__abs-love">
+										<picture>
+											<source media="(min-width: 767.98px)" srcset="img/main/excursions/ld.svg">
+											<img src="@img/main/excursions/lm.svg" alt="в избранное">
+										</picture>
+										<!-- <img src="@img/header/love 1.svg" alt="в избранное"> -->
+									</button>
+									<div class="excursion__content">
+										<span class="excursion__title">Весь Калининград с земли и воды: экскурсия на автобусе и кораблике</span>
+										<p class="excursion__text">Двухчасовая экскурсия по Эрмитажу в мини-группе — история Зимнего дворца и шедевры мастеров Западной Европы.</p>
+										<div class="excursion__bottom">
+											<div class="excursion__cost">
+												<div class="excursion__price">от 2750 ₽ / <span>с чел</span></div>
+												<select name="form[]" class="form excursion__select">
+													<option value="" selected>Выбрать время</option>
+													<option value="2">9:00</option>
+													<option value="3">13:00</option>
+													<option value="4">16:00</option>
+												</select>
+												<button class="excursion__add-mob">Добавить в заказ</button>
+											</div>
+											<button type="button" class="excursion__add">
+												<img src="@img/main/excursions/plus 2.svg" alt="Добавить">
+											</button>
+										</div>
+									</div>
+								</article>
+								<article class="excursions__excursion excursion">
+									<div class="excursion__img">
+										<img src="@img/main/excursions/04.jpg" alt="Эрмитаж">
+									</div>
+									<button type="button" class="excursion__abs-love">
+										<picture>
+											<source media="(min-width: 767.98px)" srcset="img/main/excursions/ld.svg">
+											<img src="@img/main/excursions/lm.svg" alt="в избранное">
+										</picture>
+										<!-- <img src="@img/header/love 1.svg" alt="в избранное"> -->
+									</button>
+									<div class="excursion__content">
+										<span class="excursion__title">Must-visit: экскурсия по великому Босфору на пароме с аудиогидом</span>
+										<p class="excursion__text">Двухчасовая экскурсия по Эрмитажу в мини-группе — история Зимнего дворца и шедевры мастеров Западной Европы.</p>
+										<div class="excursion__bottom">
+											<div class="excursion__cost">
+												<div class="excursion__price">от 2750 ₽ / <span>с чел</span></div>
+												<select name="form[]" class="form excursion__select">
+													<option value="" selected>Выбрать время</option>
+													<option value="2">9:00</option>
+													<option value="3">13:00</option>
+													<option value="4">16:00</option>
+												</select>
+												<button class="excursion__add-mob">Добавить в заказ</button>
+											</div>
+											<button type="button" class="excursion__add">
+												<img src="@img/main/excursions/plus 2.svg" alt="Добавить">
+											</button>
+										</div>
+									</div>
+								</article>
+								<article class="excursions__excursion excursion">
+									<div class="excursion__img">
+										<img src="@img/main/excursions/05.jpg" alt="Эрмитаж">
+									</div>
+									<button type="button" class="excursion__abs-love">
+										<picture>
+											<source media="(min-width: 767.98px)" srcset="img/main/excursions/ld.svg">
+											<img src="@img/main/excursions/lm.svg" alt="в избранное">
+										</picture>
+										<!-- <img src="@img/header/love 1.svg" alt="в избранное"> -->
+									</button>
+									<div class="excursion__content">
+										<span class="excursion__title">Коллекция Эрмитажа и парадная жизнь Зимнего дворца</span>
+										<p class="excursion__text">Двухчасовая экскурсия по Эрмитажу в мини-группе — история Зимнего дворца и шедевры мастеров Западной Европы.</p>
+										<div class="excursion__bottom">
+											<div class="excursion__cost">
+												<div class="excursion__price">от 2750 ₽ / <span>с чел</span></div>
+												<select name="form[]" class="form excursion__select">
+													<option value="" selected>Выбрать время</option>
+													<option value="2">9:00</option>
+													<option value="3">13:00</option>
+													<option value="4">16:00</option>
+												</select>
+												<button class="excursion__add-mob">Добавить в заказ</button>
+											</div>
+											<button type="button" class="excursion__add">
+												<img src="@img/main/excursions/plus 2.svg" alt="Добавить">
+											</button>
+										</div>
+									</div>
+								</article>
+								<article class="excursions__excursion excursion">
+									<div class="excursion__img">
+										<img src="@img/main/excursions/06.jpg" alt="Эрмитаж">
+									</div>
+									<button type="button" class="excursion__abs-love">
+										<picture>
+											<source media="(min-width: 767.98px)" srcset="img/main/excursions/ld.svg">
+											<img src="@img/main/excursions/lm.svg" alt="в избранное">
+										</picture>
+										<!-- <img src="@img/header/love 1.svg" alt="в избранное"> -->
+									</button>
+									<div class="excursion__content">
+										<span class="excursion__title">По дюнам на квадроциклах, катание на верблюдах и ужин в пустыне</span>
+										<p class="excursion__text">Двухчасовая экскурсия по Эрмитажу в мини-группе — история Зимнего дворца и шедевры мастеров Западной Европы.</p>
+										<div class="excursion__bottom">
+											<div class="excursion__cost">
+												<div class="excursion__price">от 2750 ₽ / <span>с чел</span></div>
+												<select name="form[]" class="form excursion__select">
+													<option value="" selected>Выбрать время</option>
+													<option value="2">9:00</option>
+													<option value="3">13:00</option>
+													<option value="4">16:00</option>
+												</select>
+												<button class="excursion__add-mob">Добавить в заказ</button>
+											</div>
+											<button type="button" class="excursion__add">
+												<img src="@img/main/excursions/plus 2.svg" alt="Добавить">
+											</button>
+										</div>
+									</div>
+								</article>
+								<article class="excursions__excursion excursion">
+									<div class="excursion__img">
+										<img src="@img/main/excursions/07.jpg" alt="Эрмитаж">
+									</div>
+									<button type="button" class="excursion__abs-love">
+										<picture>
+											<source media="(min-width: 767.98px)" srcset="img/main/excursions/ld.svg">
+											<img src="@img/main/excursions/lm.svg" alt="в избранное">
+										</picture>
+										<!-- <img src="@img/header/love 1.svg" alt="в избранное"> -->
+									</button>
+									<div class="excursion__content">
+										<span class="excursion__title">Весь Калининград с земли и воды: экскурсия на автобусе и кораблике</span>
+										<p class="excursion__text">Двухчасовая экскурсия по Эрмитажу в мини-группе — история Зимнего дворца и шедевры мастеров Западной Европы.</p>
+										<div class="excursion__bottom">
+											<div class="excursion__cost">
+												<div class="excursion__price">от 2750 ₽ / <span>с чел</span></div>
+												<select name="form[]" class="form excursion__select">
+													<option value="" selected>Выбрать время</option>
+													<option value="2">9:00</option>
+													<option value="3">13:00</option>
+													<option value="4">16:00</option>
+												</select>
+												<button class="excursion__add-mob">Добавить в заказ</button>
+											</div>
+											<button type="button" class="excursion__add">
+												<img src="@img/main/excursions/plus 2.svg" alt="Добавить">
+											</button>
+										</div>
+									</div>
+								</article>
+								<article class="excursions__excursion excursion">
+									<div class="excursion__img">
+										<img src="@img/main/excursions/08.jpg" alt="Эрмитаж">
+									</div>
+									<button type="button" class="excursion__abs-love">
+										<picture>
+											<source media="(min-width: 767.98px)" srcset="img/main/excursions/ld.svg">
+											<img src="@img/main/excursions/lm.svg" alt="в избранное">
+										</picture>
+										<!-- <img src="@img/header/love 1.svg" alt="в избранное"> -->
+									</button>
+									<div class="excursion__content">
+										<span class="excursion__title">Must-visit: экскурсия по великому Босфору на пароме с аудиогидом</span>
+										<p class="excursion__text">Двухчасовая экскурсия по Эрмитажу в мини-группе — история Зимнего дворца и шедевры мастеров Западной Европы.</p>
+										<div class="excursion__bottom">
+											<div class="excursion__cost">
+												<div class="excursion__price">от 2750 ₽ / <span>с чел</span></div>
+												<select name="form[]" class="form excursion__select">
+													<option value="" selected>Выбрать время</option>
+													<option value="2">9:00</option>
+													<option value="3">13:00</option>
+													<option value="4">16:00</option>
+												</select>
+												<button class="excursion__add-mob">Добавить в заказ</button>
+											</div>
+											<button type="button" class="excursion__add">
+												<img src="@img/main/excursions/plus 2.svg" alt="Добавить">
+											</button>
+										</div>
+									</div>
+								</article>
+							</div>
+							<button hidden data-showmore-button type="button" class="block__more">
+								<span>Все экскурсии</span>
+								<span>Скыть</span>
+							</button>
+						</div>
+					</div>
+				</section>
+				<section class="page__feedback feedback">
+					<div class="feedback__container">
+						<div class="feedback__left left-feedback">
+							<h3 class="left-feedback__title title">Отзывы</h3>
+							<form action="#" class="left-feedback__form">
+								<textarea name="subscribe" id="subscribe" cols="90" rows="7"></textarea>
+								<button data-da=".feedback__right, 768" class="left-feedback__button">Оставить отзыв</button>
+							</form>
+						</div>
+						<div class="feedback__right right-feedback">
+							<div class="right-feedback__slider">
+								<div class="right-feedback__swiper">
+									<div class="right-feedback__slide">
+										<div class="right-feedback__img -ibg"><img src="@img/main/feedback/Ellipse 6.png" alt="Пользователь"></div>
+										<div class="right-feedback__feedback-content feedback-content">
+											<span class="feedback-content__name">Александр</span>
+											<span class="feedback-content__row">
+												<span class="feedback-content__title">Тур:</span>
+												<span class="feedback-content__city">Калининград</span>
+												<span class="feedback-content__title">Оценка</span>
+												<span class="feedback-content__img">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+												</span>
+											</span>
+											<p class="feedback-content__text">Хочу сказать огромное спасибо нашему гиду Катерине! гуляйте
+												по крышам - не пожалеете не на секунду, город с высоты и с видом
+												на центр настолько необычен что захватывает дух! И обязательно
+												берите удобную обувь и фотоаппараты для полного погружения
+												в романтику крыш!
+											</p>
+										</div>
+									</div>
+									<div class="right-feedback__slide">
+										<div class="right-feedback__img -ibg"><img src="@img/main/feedback/Ellipse 6.png" alt="Пользователь"></div>
+										<div class="right-feedback__feedback-content feedback-content">
+											<span class="feedback-content__name">Александр</span>
+											<span class="feedback-content__row">
+												<span class="feedback-content__title">Тур:</span>
+												<span class="feedback-content__city">Калининград</span>
+												<span class="feedback-content__title">Оценка</span>
+												<span class="feedback-content__img">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+												</span>
+											</span>
+											<p class="feedback-content__text">Хочу сказать огромное спасибо нашему гиду Катерине! гуляйте
+												по крышам - не пожалеете не на секунду, город с высоты и с видом
+												на центр настолько необычен что захватывает дух! И обязательно
+												берите удобную обувь и фотоаппараты для полного погружения
+												в романтику крыш!
+											</p>
+										</div>
+									</div>
+									<div class="right-feedback__slide">
+										<div class="right-feedback__img -ibg"><img src="@img/main/feedback/Ellipse 6.png" alt="Пользователь"></div>
+										<div class="right-feedback__feedback-content feedback-content">
+											<span class="feedback-content__name">Александр</span>
+											<span class="feedback-content__row">
+												<span class="feedback-content__title">Тур:</span>
+												<span class="feedback-content__city">Калининград</span>
+												<span class="feedback-content__title">Оценка</span>
+												<span class="feedback-content__img">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+												</span>
+											</span>
+											<p class="feedback-content__text">Хочу сказать огромное спасибо нашему гиду Катерине! гуляйте
+												по крышам - не пожалеете не на секунду, город с высоты и с видом
+												на центр настолько необычен что захватывает дух! И обязательно
+												берите удобную обувь и фотоаппараты для полного погружения
+												в романтику крыш!
+											</p>
+										</div>
+									</div>
+									<div class="right-feedback__slide">
+										<div class="right-feedback__img -ibg"><img src="@img/main/feedback/Ellipse 6.png" alt="Пользователь"></div>
+										<div class="right-feedback__feedback-content feedback-content">
+											<span class="feedback-content__name">Александр</span>
+											<span class="feedback-content__row">
+												<span class="feedback-content__title">Тур:</span>
+												<span class="feedback-content__city">Калининград</span>
+												<span class="feedback-content__title">Оценка</span>
+												<span class="feedback-content__img">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+												</span>
+											</span>
+											<p class="feedback-content__text">Хочу сказать огромное спасибо нашему гиду Катерине! гуляйте
+												по крышам - не пожалеете не на секунду, город с высоты и с видом
+												на центр настолько необычен что захватывает дух! И обязательно
+												берите удобную обувь и фотоаппараты для полного погружения
+												в романтику крыш!
+											</p>
+										</div>
+									</div>
+									<div class="right-feedback__slide">
+										<div class="right-feedback__img -ibg"><img src="@img/main/feedback/Ellipse 6.png" alt="Пользователь"></div>
+										<div class="right-feedback__feedback-content feedback-content">
+											<span class="feedback-content__name">Александр</span>
+											<span class="feedback-content__row">
+												<span class="feedback-content__title">Тур:</span>
+												<span class="feedback-content__city">Калининград</span>
+												<span class="feedback-content__title">Оценка</span>
+												<span class="feedback-content__img">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+													<img src="@img/main/feedback/star 1.svg" alt="star">
+												</span>
+											</span>
+											<p class="feedback-content__text">Хочу сказать огромное спасибо нашему гиду Катерине! гуляйте
+												по крышам - не пожалеете не на секунду, город с высоты и с видом
+												на центр настолько необычен что захватывает дух! И обязательно
+												берите удобную обувь и фотоаппараты для полного погружения
+												в романтику крыш!
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="right-feedback__controls">
+								<div class="right-feedback__pagination"></div>
+								<div class="right-feedback__navigation">
+									<button class="right-feedback__prev right-feedback__arrow"><img src="@img/main/feedback/arrow-prev.svg" alt="Назад"></button>
+									<button class="right-feedback__next right-feedback__arrow"><img src="@img/main/feedback/arrow-next.svg" alt="Вперёд"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__blog blog">
+					<div class="blog__container">
+						<div class="blog__top">
+							<h3 class="blog__title title">Блог</h3>
+							<div class="blog__navigation right-feedback__navigation">
+								<button class="blog__prev right-feedback__arrow"><img src="@img/main/feedback/arrow-prev.svg" alt="Назад"></button>
+								<button class="blog__next right-feedback__arrow"><img src="@img/main/feedback/arrow-next.svg" alt="Вперёд"></button>
+							</div>
+							<a href="#" class="blog__link">В блог</a>
+						</div>
+						<div class="blog__bottom">
+							<div class="blog__slider">
+								<div class="blog__swiper">
+									<article class="blog__slide postblog">
+										<div class="postblog__img">
+											<img src="@img/main/blog/01.jpg" alt="01">
+										</div>
+										<div class="postblog__data">
+											<img src="@img/main/blog/calendar.svg" alt="">
+											<span class="postblog__text-data">Сегодня 15:25</span>
+										</div>
+										<p class="postblog__text">Программа автобусной экскурсии из Петербурга в Выборг</p>
+										<a href="#" class="postblog__link">Читать <span>...</span></a>
+									</article>
+									<article class="blog__slide postblog">
+										<div class="postblog__img">
+											<img src="@img/main/blog/02.jpg" alt="01">
+										</div>
+										<div class="postblog__data">
+											<img src="@img/main/blog/calendar.svg" alt="">
+											<span class="postblog__text-data">Сегодня 15:25</span>
+										</div>
+										<p class="postblog__text">10 лучших экскурсий в городе античной культуры Риме</p>
+										<a href="#" class="postblog__link">Читать <span>...</span></a>
+									</article>
+									<article class="blog__slide postblog">
+										<div class="postblog__img">
+											<img src="@img/main/blog/03.jpg" alt="01">
+										</div>
+										<div class="postblog__data">
+											<img src="@img/main/blog/calendar.svg" alt="">
+											<span class="postblog__text-data">Сегодня 15:25</span>
+										</div>
+										<p class="postblog__text">10 главных вещей, которые нужно успеть сделать в Будапеште</p>
+										<a href="#" class="postblog__link">Читать <span>...</span></a>
+									</article>
+									<article class="blog__slide postblog">
+										<div class="postblog__img">
+											<img src="@img/main/blog/04.jpg" alt="01">
+										</div>
+										<div class="postblog__data">
+											<img src="@img/main/blog/calendar.svg" alt="">
+											<span class="postblog__text-data">Сегодня 15:25</span>
+										</div>
+										<p class="postblog__text">В какие страны можно выехать россиянам, несмотря на коронавирус?</p>
+										<a href="#" class="postblog__link">Читать <span>...</span></a>
+									</article>
+									<article class="blog__slide postblog">
+										<div class="postblog__img">
+											<img src="@img/main/blog/01.jpg" alt="01">
+										</div>
+										<div class="postblog__data">
+											<img src="@img/main/blog/calendar.svg" alt="">
+											<span class="postblog__text-data">Сегодня 15:25</span>
+										</div>
+										<p class="postblog__text">Программа автобусной экскурсии из Петербурга в Выборг</p>
+										<a href="#" class="postblog__link">Читать <span>...</span></a>
+									</article>
+									<article class="blog__slide postblog">
+										<div class="postblog__img">
+											<img src="@img/main/blog/02.jpg" alt="01">
+										</div>
+										<div class="postblog__data">
+											<img src="@img/main/blog/calendar.svg" alt="">
+											<span class="postblog__text-data">Сегодня 15:25</span>
+										</div>
+										<p class="postblog__text">Программа автобусной экскурсии из Петербурга в Выборг</p>
+										<a href="#" class="postblog__link">Читать <span>...</span></a>
+									</article>
+									<article class="blog__slide postblog">
+										<div class="postblog__img">
+											<img src="@img/main/blog/03.jpg" alt="01">
+										</div>
+										<div class="postblog__data">
+											<img src="@img/main/blog/calendar.svg" alt="">
+											<span class="postblog__text-data">Сегодня 15:25</span>
+										</div>
+										<p class="postblog__text">Программа автобусной экскурсии из Петербурга в Выборг</p>
+										<a href="#" class="postblog__link">Читать <span>...</span></a>
+									</article>
+									<article class="blog__slide postblog">
+										<div class="postblog__img">
+											<img src="@img/main/blog/04.jpg" alt="01">
+										</div>
+										<div class="postblog__data">
+											<img src="@img/main/blog/calendar.svg" alt="">
+											<span class="postblog__text-data">Сегодня 15:25</span>
+										</div>
+										<p class="postblog__text">Программа автобусной экскурсии из Петербурга в Выборг</p>
+										<a href="#" class="postblog__link">Читать <span>...</span></a>
+									</article>
+									<article class="blog__slide postblog">
+										<div class="postblog__img">
+											<img src="@img/main/blog/01.jpg" alt="01">
+										</div>
+										<div class="postblog__data">
+											<img src="@img/main/blog/calendar.svg" alt="">
+											<span class="postblog__text-data">Сегодня 15:25</span>
+										</div>
+										<p class="postblog__text">Программа автобусной экскурсии из Петербурга в Выборг</p>
+										<a href="#" class="postblog__link">Читать <span>...</span></a>
+									</article>
+									<article class="blog__slide postblog">
+										<div class="postblog__img">
+											<img src="@img/main/blog/02.jpg" alt="01">
+										</div>
+										<div class="postblog__data">
+											<img src="@img/main/blog/calendar.svg" alt="">
+											<span class="postblog__text-data">Сегодня 15:25</span>
+										</div>
+										<p class="postblog__text">Программа автобусной экскурсии из Петербурга в Выборг</p>
+										<a href="#" class="postblog__link">Читать <span>...</span></a>
+									</article>
+									<div class="blog__slide postblog">
+										<div class="postblog__img">
+											<img src="@img/main/blog/04.jpg" alt="01">
+										</div>
+										<div class="postblog__data">
+											<img src="@img/main/blog/calendar.svg" alt="">
+											<span class="postblog__text-data">Сегодня 15:25</span>
+										</div>
+										<p class="postblog__text">Программа автобусной экскурсии из Петербурга в Выборг</p>
+										<a href="#" class="postblog__link">Читать <span>...</span></a>
+									</div>
+									<div class="blog__slide postblog">
+										<div class="postblog__img">
+											<img src="@img/main/blog/01.jpg" alt="01">
+										</div>
+										<div class="postblog__data">
+											<img src="@img/main/blog/calendar.svg" alt="">
+											<span class="postblog__text-data">Сегодня 15:25</span>
+										</div>
+										<p class="postblog__text">Программа автобусной экскурсии из Петербурга в Выборг</p>
+										<a href="#" class="postblog__link">Читать <span>...</span></a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section class="page__feedback feedback">
-
-				</section>
-				<section class="page__blog blog">
-
-				</section>
 				<section class="page__subscribe subscribe">
-
+					<div class="subscribe__container">
+						<div class="subscribe__wrapper">
+							<h3 class="subscribe__title ">Подпишитесь <br> на нашу рассылку</h3>
+							<p class="subscribe__subtext">Подписывайтесь на удобный для Вас мессенджер</p>
+							<div class="subscribe__links">
+								<a href="#" class="subscribe__link">
+									<img src="@img/main/subscribe/instagram 1.svg" alt="instagram">
+									<span class="subscribe__link-text">Instagram</span>
+								</a>
+								<a href="#" class="subscribe__link">
+									<img src="@img/main/subscribe/telegram.svg" alt="Telegram">
+									<span class="subscribe__link-text">Telegram</span>
+								</a>
+								<a href="#" class="subscribe__link">
+									<img src="@img/main/subscribe/vk.svg" alt="Vkontakte">
+									<span class="subscribe__link-text">Vkontakte</span>
+								</a>
+							</div>
+							<p class="subscribe__text">При переходе в одну из указанных социальных сетей, вы автоматически соглашаетесь с <a class="subscribe__politica" href="#">политикой конфидециальности</a></p>
+						</div>
+					</div>
 				</section>
 			</main>
 			@@include('html/_footer.htm',{})

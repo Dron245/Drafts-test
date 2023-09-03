@@ -3,6 +3,12 @@
 .select {
 	position: relative;
 	@include adaptiveValue("width", 241, 131,1440,375,1);
+	.excursion & {
+		width: auto;
+		@media (max-width:$mobile){
+			 width: 100%; 
+		}
+	}
 	// .select__body
 	&__body {
 		position: relative;
@@ -17,11 +23,25 @@
 		cursor: pointer;
 		width: 100%;
 		border-radius: 10px;
-		padding: 10px 0; 
+		padding: 10px 0;
+		.excursion & {
+			border-radius: 1000px;
+			// border: 1px solid #E9E9E9;
+			padding: 0px 0px 0px 0px;
+			width: 135px;
+			background: #fff;
+			@media (max-width:$mobile){
+				width: 100%;
+				 margin-bottom: 10px;
+			}
+			// font-size: rem(12);
+		}
+
 		@media (max-width:$mobile){
 			border-radius: 1000px;
 			background: #F5F5F5;
-			padding: 5px 0; 
+			padding: 5px 0;
+			
 		}
 	}
 
@@ -29,6 +49,10 @@
 		font-weight: 500;
 		color: #b7b7b7;
 		@include adaptiveValue("font-size", 16, 14,1440,768,1);
+		.excursion & {
+			font-size: rem(12);
+			color: $mainColor;
+		}
 		@media (max-width:$mobile){
 			 font-weight: 400;
 			 color: #454545; 
@@ -42,9 +66,13 @@
 		height: rem(30);
 		padding: 0 rem(15);
 		@media (max-width:$mobile){
-			 padding: 0px 5px; 
+			 padding: 0px 13px; 
 		}
 		gap: rem(10);
+		.excursion & {
+			gap: 3px;
+			padding: 0px 8px;
+		}
 		> * {
 			flex: 1 1 auto;
 		}
@@ -83,7 +111,7 @@
 	&__options {
 		color: #b7b7b7;
 		position: absolute;
-		top: 52px;
+		top: 32px;
 		border-radius: 0 0 4px 4px;
 		min-width: 100%;
 		left: 0;
@@ -92,6 +120,14 @@
 		border: 1px solid #d9d9d9;
 		border-top: 0;
 		padding: 10px 0px 5px 0px;
+		.excursion & {
+			top: 10px;
+			@media (min-width:$mobile){
+				 top: 28px;
+				 min-width: 0;
+				 width: 135px;
+			}
+		}
 	}
 	// .select__scroll
 	&__scroll {

@@ -86,15 +86,17 @@
 	&__item {
 		position: relative;
 		&:hover{
-			& .menu__link {
-				background-color: $mainyellow;
-			border-radius: 6.25rem;
-			font-weight: 600;
-			padding-left: 19px;
-			}
-			
-			& span::after {
-				transform: rotate(180deg);
+			@media (min-width:$mobile){
+				& .menu__link {
+					background-color: $mainyellow;
+					border-radius: 6.25rem;
+					font-weight: 600;
+					padding-left: 19px;
+				}
+				
+				& span::after {
+					transform: rotate(180deg);
+				} 
 			}
 			& .menu__sublist {
 				opacity: 1;
@@ -163,7 +165,15 @@
 		}
 		&_first {
 			@media (max-width:$mobile){
-				//  font-size: 18px; 
+				//  font-size: 18px;
+				background-color: $mainyellow;
+				// display: block;
+					border-radius: 6.25rem;
+					font-weight: 600;
+					padding-left: 19px;
+					span {
+						padding-left: 19px;
+					}
 			}
 		}
 		@media (max-width:$mobile){

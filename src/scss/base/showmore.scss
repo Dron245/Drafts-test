@@ -3,7 +3,23 @@
 [data-showmore-content] {
 }
 [data-showmore-button] {
+	&.block__more {
+		// text-align: center;
+		margin:auto;
+		display: block;
+		min-width: 180px;
+	}
 	span {
+		background-color: $mainyellow;
+		margin-top: 73px;
+		display: block;
+		// margin-left: auto;
+		// margin-right: auto;
+		text-align: center;
+		font-weight: 500;
+		font-size: 15px;
+		padding: 15px 25px;
+		border-radius: 100px;
 		&:last-child {
 			display: none;
 		}
