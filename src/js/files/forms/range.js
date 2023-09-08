@@ -1,6 +1,5 @@
 // Подключение из node_modules
 import * as noUiSlider from 'nouislider';
-
 // Подключение стилей из scss/base/forms/range.scss 
 // в файле scss/forms/forms.scss
 
@@ -13,11 +12,16 @@ export function rangeInit() {
 		let textFrom = priceSlider.getAttribute('data-from');
 		let textTo = priceSlider.getAttribute('data-to');
 		noUiSlider.create(priceSlider, {
-			start: 0, // [0,200000]
-			connect: [true, false],
+			start:   [0,200],
+			// connect: [true, false],
+			tooltips: [
+				false,
+				wNumb({decimals: 0}), // tooltip with custom formatting
+				// true 
+		  ],
 			range: {
 				'min': [0],
-				'max': [200000]
+				'max': [200]
 			}
 		});
 		/*
@@ -37,6 +41,10 @@ export function rangeInit() {
 			}
 			priceSlider.noUiSlider.set([priceStartValue, priceEndValue]);
 		}
+		var rangeSliderValueElement = document.getElementById('slider-range-value');
+		priceSlider.noUiSlider.on('update', function (values, handle) {
+   	rangeSliderValueElement.innerHTML = values[handle];
+});
 	}
 }
 rangeInit();

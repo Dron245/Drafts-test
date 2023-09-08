@@ -261,7 +261,8 @@ const countryList = [
 	"Åland Islands"
 ];
 
-const autoCompleteJS = new autoComplete({
+if (document.querySelector('#autoCompleteCountry')) {
+	const autoCompleteJS = new autoComplete({
 	selector: "#autoCompleteCountry",
    placeHolder: "Выберите направление",
 	data: {
@@ -283,17 +284,21 @@ const autoCompleteJS = new autoComplete({
 		maxResults: 10,
 	},
 });
+}
 
 
 
-const picker = new easepick.create({
+if (document.querySelector('#datepicker')) {
+	const picker = new easepick.create({
 	element: document.getElementById('datepicker'),
 	css: [
 	  'https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.1/dist/index.css',
 	],
  });
+}
 
- const pickerexc = new easepick.create({
+if (document.querySelector('#checkin')) {
+	 const pickerexc = new easepick.create({
 	element: "#checkin",
 	css: [
 		 "https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.1/dist/index.css",
@@ -312,3 +317,4 @@ const picker = new easepick.create({
 		elementEnd: "#checkout"
 	 },
 })
+}
